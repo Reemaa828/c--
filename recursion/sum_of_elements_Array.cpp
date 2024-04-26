@@ -2,6 +2,7 @@
 using namespace std;
 
 int summ_of_elements(int arr[],int size){
+    
     if (size==0){
         return 0;
     }
