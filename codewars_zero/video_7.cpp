@@ -1,5 +1,7 @@
 #include <iostream>
 #include <algorithm>
+#include <array>
+#include <vector>
 using namespace std;
 
 int str_count(string word,char n){
@@ -19,6 +21,7 @@ string alternating_case(string word){
         }
         else{
            word.at(i)=tolower(word.at(i));
+    
         }
     }
     
@@ -28,5 +31,9 @@ string alternating_case(string word){
 int main(){
    // cout<<str_count("reeeeema",'o');
    // cout<<past(0,1,1);
+   array<int,5>arr={1,2,3,4};
+   vector<int>vect={1,2,3,4};
+   vector<int>::iterator ite=vect.begin();
+   
    cout<<alternating_case("111122131");
 }
