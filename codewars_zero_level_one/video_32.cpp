@@ -24,8 +24,13 @@ int football(array<string,10>arr){
     return points;
 }
 
+int seats_in_theater(int ncolms, int nrows, int colms, int rows){
+    return (ncolms-colms+1)*(nrows-rows);
+}
+
 int main(){
     //string ss="3:1";
-    cout<< football({"1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"});
+    //cout<< football({"1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"});
     //cout<<sum_of_array({1,2,3,4});
+    cout<<seats_in_theater(16,11,5,3);
 }
